@@ -1,0 +1,309 @@
+@font-face {
+    font-family: 'rubik';
+    src: url(../assets/Rubik-VariableFont_wght.ttf);
+}
+
+h1{
+    font-family: 'rubik';
+    font-size: 40px;
+}
+
+h2{
+    font-family: 'rubik';
+    font-size: 30px;
+}
+
+p{
+    font-family: 'rubik';
+    font-size: 20px;
+}
+
+/*Ability*/
+.ability{
+    width: 100%;
+    margin-top: 9.4375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ability h1{
+    font-family: 'rubik';
+    font-size: 40px;
+}
+
+.ability hr {
+    height: 0.125rem;
+    margin-top: 0%;
+  width: 13.125rem;
+  background-color: black;
+  margin-bottom: 93px;
+}
+
+.ability-images{
+    display: grid;
+    grid-template: repeat(2,170px) / repeat(4,minmax(50px,170px));
+    
+    gap: 128px 119px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.button{
+    width: 120px;
+    height: 37px;
+    display: flex;
+    margin-top: 80px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #78A1BB;
+    border-radius: 10px;
+}
+
+.button:hover{
+    transition: .3s;
+    background-color: #628ba5;
+}
+
+.button a{
+    text-decoration: none;
+    color: white;
+}
+
+/*Provided*/
+
+.provided{
+    margin-top: 9.4375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.provided hr {
+    height: 0.125rem;
+    margin-top: 0%;
+  width: 10.625rem;
+  background-color: black;
+  margin-bottom: 93px;
+}
+
+.provided-images{
+    display: grid;
+    grid-template: repeat(2,minmax(50px,154px)) / repeat(3,170px);
+    gap: 0px 283px;
+    place-items: center;
+    place-content: center;
+    margin-bottom: 29px;
+}
+
+.provided h1 {
+    font-family: 'rubik';
+    font-size: 40px;
+}
+
+.provide-text-mantenimiento{
+    grid-row-start: 2;
+    grid-column-start: 1;
+}
+
+.provide-text-seguridad{
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+.provide-text-optimizacion{
+    grid-row-start: 2;
+    grid-column-start: 3;
+}
+
+/*Contact*/
+
+.contact{
+    margin-top: 9.4375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact hr {
+    height: 0.125rem;
+    margin-top: 0%;
+  width: 14.0625rem;
+  margin-bottom: 93px;
+  background-color: black;
+}
+
+.contact h1{
+    font-family: 'rubik';
+    font-size: 40px;
+}
+
+/* Section form */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 200px;
+}
+
+.form h2{
+    margin-top: 150px;
+    margin-right: 750px;
+    padding-bottom:40px;
+    padding-top: 0;
+    font-size: 40px;
+    font-family: 'rubik';
+}
+
+.form-div {
+    box-shadow: 5px 5px 10px #EBEBEB;
+    background-color: #FEFEFE;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.form div img {
+    height: 50%;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 100px;
+    align-items: center;
+}
+
+
+.formulario form input {
+    height: 59px;
+    width: 337px;
+    font-family: 'rubik';
+    border: 1px solid #EBEBEB;
+    border-radius: 10px;
+}
+
+.formulario form textarea {
+    width: 337px;
+    font-family: 'rubik';
+    border: 1px solid #EBEBEB;
+    border-radius: 10px;
+    resize: none;
+}
+
+.formulario form textarea:focus{
+    outline: none;
+    border: 5px solid #c1dafd;
+    transition: .1s;
+}
+
+.formulario form div {
+    margin-top: 20px;
+}
+
+b{
+    font-family: 'rubik';
+    font-size: 20px;
+}
+
+.signo-pregunta{
+    align-items: flex-end;
+    justify-content: end;
+    margin-left: 460px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.formulario form button {
+    background-color: #78A1BB;
+    color: white;
+    border: none;
+    width: 106px;
+    height: 37px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.form-div-text {
+    position: absolute;
+}
+
+.form-div-text h1 {
+    font-family: 'rubik';
+    color: white;
+    right: 270px;
+    bottom: 240px;
+    font-size: 40px;
+    position: relative;
+}
+
+.form-div p {
+    line-height:30px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'rubik';
+    color: white;
+    position: relative;
+    font-weight: 300;
+    right: 250px;
+    width: 370px;
+}
+
+.form-div-logo{
+    position: absolute;
+}
+
+.form-div-logo-white{
+    position: relative;
+    top: 230px;
+    left: 30px;
+}
+
+.form-div-logo-derecha{
+    position: relative;
+    bottom: 408px;
+    left: 160px;
+}
+
+.form-div-logo-izquierda{
+    position: relative;
+    bottom: 408px;
+    right: 330px;
+}
+
+@media screen and (max-width:1024px){
+    .ability-images{
+        grid-template: 170px 170px 170px / 170px 170px 170px;
+    }
+
+    .provided-images{
+        display: grid;
+        grid-template: repeat(6,154px) / 170px;
+    }
+
+    .provide-text-mantenimiento{
+        grid-row-start: 2;
+        grid-column-start: 1;
+    }
+    
+    .provide-text-seguridad{
+        grid-row-start: 4;
+        grid-column-start: 1;
+    }
+    
+    .provide-text-optimizacion{
+        grid-row-start: 6;
+        grid-column-start: 1;
+    }
+}
+

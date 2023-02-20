@@ -1,0 +1,192 @@
+/*Contact*/
+
+.contact{
+    margin-top: 9.4375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact hr {
+    height: 0.125rem;
+    margin-top: 0%;
+  width: 10.625rem;
+  margin-bottom: 93px;
+  background-color: black;
+}
+
+/*form*/
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 200px;
+}
+
+.form h2{
+    margin-top: 150px;
+    margin-right: 750px;
+    padding-bottom:40px;
+    padding-top: 0;
+    font-size: 40px;
+    font-family: 'rubik';
+}
+
+.form-div {
+    box-shadow: 5px 5px 10px #EBEBEB;
+    background-color: #FEFEFE;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.form div img {
+    height: 50%;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 100px;
+    align-items: center;
+}
+
+
+.formulario form input {
+    height: 59px;
+    width: 337px;
+    font-family: 'rubik';
+    border: 1px solid #EBEBEB;
+    border-radius: 10px;
+}
+
+.formulario form textarea {
+    width: 337px;
+    font-family: 'rubik';
+    border: 1px solid #EBEBEB;
+    border-radius: 10px;
+    resize: none;
+}
+
+.formulario form textarea:focus{
+    outline: none;
+    border: 5px solid #c1dafd;
+    transition: .1s;
+}
+
+.formulario form div {
+    margin-top: 20px;
+}
+
+b{
+    font-family: 'rubik';
+    font-size: 20px;
+}
+
+.signo-pregunta{
+    align-items: flex-end;
+    justify-content: end;
+    margin-left: 460px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.formulario form button {
+    background-color: #78A1BB;
+    color: white;
+    border: none;
+    width: 106px;
+    height: 37px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.form-div-text {
+    position: absolute;
+}
+
+.form-div-text h1 {
+    font-family: 'rubik';
+    color: white;
+    right: 270px;
+    bottom: 240px;
+    font-size: 40px;
+    position: relative;
+}
+
+.form-div p {
+    line-height:30px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'rubik';
+    color: white;
+    position: relative;
+    font-weight: 300;
+    right: 250px;
+    width: 370px;
+}
+
+.form-div-logo{
+    position: absolute;
+}
+
+.form-div-logo-white{
+    position: relative;
+    top: 230px;
+    left: 30px;
+}
+
+.form-div-logo-derecha{
+    position: relative;
+    bottom: 408px;
+    left: 160px;
+}
+
+.form-div-logo-izquierda{
+    position: relative;
+    bottom: 408px;
+    right: 330px;
+}
+
+.button{
+    width: 120px;
+    height: 37px;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #78A1BB;
+    border-radius: 10px;
+}
+
+.button:hover{
+    transition: .3s;
+    background-color: #628ba5;
+}
+
+.button a{
+    text-decoration: none;
+    color: white;
+}
+
+
+h1{
+    font-family: 'rubik';
+    font-size: 40px;
+}
+
+h2{
+    font-family: 'rubik';
+    font-size: 30px;
+}
+
+p{
+    font-family: 'rubik';
+    font-size: 20px;
+}

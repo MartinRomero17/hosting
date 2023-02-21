@@ -1,0 +1,374 @@
+.body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#menu, #menu-check{
+    width: 40px;
+    display: none;
+}
+
+#line{
+    display: none;
+}
+
+@font-face {
+    font-family: 'rubik';
+    src: url(../assets/Rubik-VariableFont_wght.ttf);
+}
+
+.header{
+    height: 147px;
+    display: flex;
+    background-color: #121212;
+    justify-content: left;
+    align-items:  center;
+    /*border: 1px solid red; */
+}
+
+.header-image {
+    display:  flex;
+    /*border:  1px solid blue; */
+    justify-content: center;
+    align-items:  center;
+    width: 50%;
+}
+
+.header-image h1{
+    font-style: normal;
+    font-family: 'rubik';
+    margin-left: 50px;
+    color: #C4C4C4;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.header.image img {
+   height: 3.875rem;
+   width: 3.0625rem;
+}
+
+.header-menu nav ul a{
+    font-style: normal;
+    font-family: 'rubik';
+    font-size: 25px;
+    margin-left: 50px;
+   text-decoration: none;
+   color: #C4C4C4;
+}
+
+.header-menu nav ul a:hover{
+    color: #FFC843;
+    transition: 0.4s;
+}
+
+.header-menu nav ul .header-menu-first{
+    margin: 0%;
+    padding: 0%;
+}
+
+.header-menu nav ul .color{
+    color: #FFC843;
+}
+
+nav{
+    width: 100%;
+    align-items: center;
+    justify-content: end;
+    display:  flex;
+    padding-right: 8.375rem;
+    /*border: 1px solid purple; */
+}
+
+.carrousel{
+    width: 100%;
+}
+
+/*footer*/
+
+footer div {
+    background-color: #121212;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: 100% / 650px auto;
+    padding-bottom: 50px;
+    justify-content: start;
+    align-items: start;
+}
+
+footer div img {
+    margin-top: 52px;
+    margin-left: 76px;
+    width: 557px;
+    height: 44px;
+}
+
+.sobre-mi{
+    padding-left: 0%;
+    margin-top: 52px;
+    width:fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: start;
+    color: white;
+}
+
+.sobre-mi a {
+    margin-top: 31px;
+    text-decoration: none;
+    color: white;
+    font-family: 'rubik';
+}
+
+.sobre-mi a:hover {
+    color: #FFC843;
+    transition: 0.4s;
+}
+
+.footer-content{
+    display: grid;
+    place-content: center;
+    grid-template: 100% / repeat(2,25%);
+}
+
+.redes{
+    padding-left: 0%;
+    margin-top: 52px;
+    margin-left: 349px; 
+    width:fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: start;
+    color: white;
+}
+
+.redes a {
+    margin-top: 31px;
+    text-decoration: none;
+    color: white;
+    font-family: 'rubik';
+}
+
+.redes a:hover{
+    color: #FFC843;
+    transition: 0.4s;
+}
+
+.redes h2{
+    font-family: 'rubik';
+    font-size: 30px;
+}
+
+.redes a{
+    font-size: 20px;
+}
+
+.redes hr{
+        height: 0.125rem;
+        margin-top: 10px;
+      width: 130px;
+      background-color: #C4C4C4;
+}
+
+.sobre-mi h2 {
+    font-family: 'rubik';
+    font-size: 30px;
+}
+
+.sobre-mi a{
+    font-size: 20px;
+}
+
+.sobre-mi hr{
+    height: 0.125rem;
+    margin-top: 10px;
+  width: 130px;
+  background-color: #C4C4C4;
+}
+
+@media screen and (max-width:1569px){
+
+    .header-image {
+        width: fit-content;
+        margin-left: 10%;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width:1334px){
+
+    .redes{
+        margin-left: 0;
+    }
+
+    footer div {
+        row-gap: 50px;
+        place-content: center;  
+        place-items: center;
+        grid-template: 100px auto /100%;
+    }
+
+    .footer-content{
+        row-gap: 150px;
+        grid-template: 100% / repeat(2,25%) ;
+    }
+
+    #line{
+        height: 0.125rem;
+      width: 13.125rem;
+      background-color: white;
+
+    }
+
+     #menu-check:not(:checked) ~ .header-menu nav ul a{
+        display: none;
+    }
+
+    #menu-check:checked ~ .header-image h1{
+        display: none;
+        color: #FFC843;
+    }
+
+    #menu-check:checked ~ .header-menu nav ul a{
+        animation: menuLetras 1.5s ease-in-out forwards;
+        display: block;
+        margin-left: 0%;
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+        margin-top: 100px;
+    }
+
+    #menu-check:not(:checked) ~ .header-menu nav ul{ 
+        animation: menucierre 2s ease-in-out forwards;
+    }
+
+    #menu-check:checked ~ .header-menu nav ul{ 
+        animation: menu 2s ease-in-out forwards;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        background-color: #121212;
+        width: 70%;
+        z-index: 9999;
+    }
+
+    #menu-check:checked ~ body.body{
+        overflow: hidden;
+    }
+
+    @keyframes menuLetras {
+        0%{
+            opacity: 0;
+        }
+
+        100%{
+            opacity: 1;
+        }
+    }
+
+    @keyframes menu {
+        0%{
+            height: 0%;
+        }
+
+        50%{
+            
+        }
+
+        100%{
+            height: 340%;
+        }
+    }
+
+    /*@keyframes menucierre {
+        0%{
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            background-color: #121212;
+            width: 70%;
+            z-index: 9999;
+            height: 100%;
+        }
+        
+        50%{
+            height: 10%;
+        }
+
+        100%{
+            background-color: #121212;
+            height: 10%;
+        }
+    } */
+
+    #menu-check:checked ~ .body{ 
+        position: absolute;
+        background-color: #121212;
+        z-index: 9999;
+    }
+
+    .header-menu ul li a{
+        margin-left: 0%;
+        margin-top: 50px;
+    }
+
+    nav{
+        top: 100px;
+        width: 100%;
+        display: block;
+       z-index: 9999;
+       
+    }
+
+    #menu-check:checked ~ label .menu-abrir{
+        display: none;
+    }
+
+    #menu-check:checked ~ label .menu-cerrar{
+        transition: .5s;
+        display: block;
+        z-index: 99999;
+    }
+
+    .menu-cerrar{
+        display: none;
+    }
+
+    #menu{
+        transition: .5s;
+        text-align: center;
+        color: #C4C4C4;
+        display: block;
+        font-size: 25px;
+        font-weight: bold;
+        border-radius: 10px;
+        border: 3px solid #C4C4C4;
+    }
+
+    #menu:hover{
+        color: black;
+        background-color: #C4C4C4;
+    }
+
+    .header-menu nav ul .header-menu-first{
+        margin-left: 50px;
+        padding: 0%;
+    }
+    
+    .header-image{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:884px) {
+    #menu-check:checked ~ .header-menu nav ul a{
+        font-size: 30px;
+    }
+}
